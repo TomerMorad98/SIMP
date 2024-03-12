@@ -1,0 +1,26 @@
+asemble circle:::
+./asm.o circle/circle.asm circle/imemin.txt circle/dmemin.txt
+simulate circle::: 
+./sim.o circle/imemin.txt circle/dmemin.txt circle/diskin.txt circle/irq2in.txt circle/dmemout.txt circle/regout.txt circle/trace.txt circle/hwregtrace.txt circle/cycles.txt circle/leds.txt circle/display7seg.txt circle/diskout.txt circle/monitor.txt circle/monitor.yuv
+
+asemble disktest:::
+./asm.o disktest/disktest.asm disktest/imemin.txt disktest/dmemin.txt
+simulate circle::: 
+./sim.o disktest/imemin.txt disktest/dmemin.txt disktest/diskin.txt disktest/irq2in.txt disktest/dmemout.txt disktest/regout.txt disktest/trace.txt disktest/hwregtrace.txt disktest/cycles.txt disktest/leds.txt disktest/display7seg.txt disktest/diskout.txt disktest/monitor.txt disktest/monitor.yuv
+
+
+assemble binom::
+./asm.o binom/binom.asm binom/imemin.txt binom/dmemin.txt
+simulate binom::
+./sim.o binom/imemin.txt binom/dmemin.txt binom/diskin.txt binom/irq2in.txt binom/dmemout.txt binom/regout.txt binom/trace.txt binom/hwregtrace.txt binom/cycles.txt binom/leds.txt binom/display7seg.txt binom/diskout.txt binom/monitor.txt binom/monitor.yuv
+
+
+assemble mulmat::
+./asm.o mulmat/mulmat.asm mulmat/imemin.txt mulmat/dmemin.txt
+simulate mulmat::
+./sim.o mulmat/imemin.txt mulmat/dmemin.txt mulmat/diskin.txt mulmat/irq2in.txt mulmat/dmemout.txt mulmat/regout.txt mulmat/trace.txt mulmat/hwregtrace.txt mulmat/cycles.txt mulmat/leds.txt mulmat/display7seg.txt mulmat/diskout.txt mulmat/monitor.txt mulmat/monitor.yuv
+
+assemble fib::
+./asm.o fib/fib.asm fib/imemin.txt fib/dmemin.txt
+simulate fib::
+./sim.o fib/imemin.txt fib/dmemin.txt fib/diskin.txt fib/irq2in.txt fib/dmemout.txt fib/regout.txt fib/trace.txt fib/hwregtrace.txt fib/cycles.txt fib/leds.txt fib/display7seg.txt fib/diskout.txt fib/monitor.txt fib/monitor.yuv
